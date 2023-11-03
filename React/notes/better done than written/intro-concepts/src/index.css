@@ -1,0 +1,39 @@
+*, ::after, ::before{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #303d43;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: medium;
+}
+
+.bookList {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    padding: 2em;
+}
+
+.bookComponent {
+    display: grid;
+    grid-template-rows: [image] 1fr [details] auto;
+    background-color: #8d8559;
+    text-align: center;
+    margin-bottom: 1em;
+    padding: .5em;
+}
+
+@media only screen and (min-width: 580px){
+    .bookList {
+        display: grid;
+    }
+}
+
+@media only screen and (min-width: 720px) {
+    .bookList {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+    } 
+}

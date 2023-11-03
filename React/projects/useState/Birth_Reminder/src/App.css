@@ -1,0 +1,75 @@
+*, ::after, ::before{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  background-color: #171515;
+  color: #f9f6f0;
+}
+
+h1,h2,h3,h4{
+  font-weight: 400;
+}
+
+.main{
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+.container{
+  padding: .5em;
+  width: 90vw;
+  background-color: #6f5b3e;
+  max-width: 500px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+  text-align: center;
+}
+
+.container h1{text-align: center; padding: .5em;}
+.container button{
+  border: none; 
+  background-color: #f9f6f0; 
+  color:#171515; 
+  margin: 1em;
+  padding: 1em;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.person{
+  background-color: #c4ae78;
+  display: grid;
+  grid-template-columns: [image] auto [texto] 1fr;
+  align-items: center;
+  margin-bottom: 1em;
+  border-radius: 8px;
+}
+
+.person img{
+  width: 90px;
+  object-fit: cover;
+  height: 90px;
+  border-radius: 50%;
+  margin: 15px;
+  cursor: pointer;
+  transition: all ease .3s;
+}
+
+.person img:hover{
+  filter: saturate(150%);
+}
+
+.person p{
+  font-weight: 500;
+  font-size: larger;
+  border: 2px solid #6f5b3e;
+  padding: .3em;
+  margin-right: .5em;
+  background-color: #171515;
+}

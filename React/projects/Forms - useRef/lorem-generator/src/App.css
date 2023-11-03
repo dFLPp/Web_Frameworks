@@ -1,0 +1,44 @@
+*, ::after, ::before{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+html, body{
+  background-color: aqua;
+}
+
+main{
+  background-color: red;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  padding: 2em;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+h3{
+  font-size: larger;
+}
+
+form input{
+  margin-top: 1em;
+  width: 50%;
+  padding: .5em;
+}
+button{
+  width: 50%;
+  padding: .5em;
+  cursor: pointer;
+}
+
+article{
+  padding: 1em;
+  background-color: chocolate;
+}
+p{
+  padding: 1em;
+  margin: .5em;
+}
